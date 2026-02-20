@@ -1242,6 +1242,10 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 
+.avatar-box img { 
+    border-radius: 12px;
+  }
+  
 @media (min-width: 250px) {
     
     .icon-box svg {
@@ -1258,11 +1262,6 @@ textarea.form-input::-webkit-resizer { display: none; }
       height: 16px;
     }
     
-      .avatar-box img { 
-    border-radius: 12px;
-    -webkit-box-shadow: box-shadow: var(--shadow-2);
-    box-shadow: box-shadow: var(--shadow-2);
-  }
     
     /*.contact-item .icon-box svg {
       width: 16px;
