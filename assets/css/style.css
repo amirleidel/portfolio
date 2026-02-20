@@ -1362,7 +1362,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { 
+    width: 120px; 
+    border-radius: 25px;
+    -webkit-box-shadow: box-shadow: var(--shadow-2);
+    box-shadow: box-shadow: var(--shadow-2);
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
