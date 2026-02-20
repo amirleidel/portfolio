@@ -129,7 +129,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, svg, ion-icon, a, button, time, span { display: block; }
 
 button {
   font: inherit;
@@ -543,6 +543,13 @@ main {
 .service-icon-box { margin-bottom: 10px; }
 
 .service-icon-box img { margin: auto; }
+
+.service-icon-box svg {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    color: var(--orange-yellow-crayola);
+}
 
 .service-content-box { text-align: center; }
 
@@ -1222,7 +1229,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
-
+  .icon-box svg {
+    color: var(--orange-yellow-crayola);
+  }
+  
 
 
 /*-----------------------------------*\
@@ -1234,6 +1244,16 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 450px) {
+    
+    .icon-box svg {
+      width: 16px;
+      height: 16px;
+    }
+    
+    /*.contact-item .icon-box svg {
+      width: 16px;
+      height: 16px;
+    }*/
 
   /**
    * client
@@ -1249,10 +1269,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
-
+  
+  
 }
-
-
 
 
 
@@ -1261,6 +1280,11 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 580px) {
+    
+        .icon-box svg {
+      width: 24px;
+      height: 24px;
+    }
 
   /**
    * CUSTOM PROPERTY
@@ -1310,8 +1334,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 12px;
     font-size: 18px;
   }
-
-
+  
 
   /**
    * #MAIN
@@ -1366,7 +1389,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-width: calc(100% - 64px);
     width: calc(100% - 64px);
   }
-
 
 
   /**
@@ -1679,7 +1701,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-
   /**
    * MAIN 
    */
@@ -1795,7 +1816,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar, article { width: auto; }
 
   article { min-height: 100%; }
-
 
 
   /**
