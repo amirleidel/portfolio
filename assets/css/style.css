@@ -1032,7 +1032,7 @@ main {
 }
 
 
-
+.info_more-btn span { display: none; }
 
 
 /*-----------------------------------*\
@@ -1241,6 +1241,16 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
+
+@media (min-width: 250px) {
+    
+    .icon-box svg {
+      width: 14px;
+      height: 14px;
+    }
+    
+}
+
 @media (min-width: 450px) {
     
     .icon-box svg {
@@ -1274,12 +1284,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
   
-    .info_more-btn span {
-    display: block;
-    font-size: var(--fs-8);
-  }
-
-  .info_more-btn ion-icon { display: none; }
   
   
 }
