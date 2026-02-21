@@ -183,12 +183,13 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Projects</button>
           </li>
-
+            
+            <!--
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
             
-          <!--
+          
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li> -->
@@ -309,73 +310,123 @@
 
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 testimonials-title">Projects</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
+              <div class="tcontent-card" data-testimonials-item>
+                
+                <div class="service-icon-box">
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/micromemo-perspective.png" alt="MicroMemo" data-testimonials-avatar>
                 </figure>
+                </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                <div class="service-content-box">
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MicroMemo Vocab Trainer</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    Flashcard app that I build out of frustration with other apps. The two goals are ease of flashcard creation using a templating system and a flexible learning algorithm that does not limit the user.
                   </p>
+                  <ul>
+                      <li> Simple Python backend architecture </li>
+                      <li> GUI built using web technologies (HTML,CSS,JS) </li>
+                      <li> An open database format using sqlite3 </li>
+                      <li> Compilation into a Windows and Android app </li>
+                  </ul>
                 </div>
-
+                </div>
+                
               </div>
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
+              <div class="tcontent-card" data-testimonials-item>
+                
+                <div class="service-icon-box">
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/ocr-demo.png" alt="PDF OCR" data-testimonials-avatar>
                 </figure>
+                </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                <div class="service-content-box">
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>PDF Optical Character Recognition</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    Scripts to digitize large amounts of scans automatically using OCR. Using this, a whole book can be turned into structured text files to create a PDF file.
                   </p>
+                  <ul>
+                      <li> Character recognition using Tesseract's pre-trained OCR models</li>
+                      <li> Second check using easyocr </li>
+                      <li> Spell checking </li>
+                      <li> Recognizes text blocks and paragraphs automatically</li>
+                      <li> Automatic PDF &#x2192; Image file &#x2192; Text pipeline</li>
+                  </ul>
                 </div>
-
+                </div>
+                
               </div>
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
+              <div class="tcontent-card" data-testimonials-item>
+                
+                <div class="service-icon-box">
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/opengl-screenshot.png" alt="C++ OpenGL" data-testimonials-avatar>
                 </figure>
+                </div>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <div class="service-content-box">
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>C++ OpenGL engine</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    A graphics demo about rendering 3D objects and moving freely in real-time written using C++ and the OpenGL API.
                   </p>
+                  <ul>
+                      <li> Extensible project structure using OOP</li>
+                      <li> OpenGL rendering pipeline</li>
+                      <li> 3D mesh loader for .obj files </li>
+                      <li> Level creation via .json files </li>
+                  </ul>
+                </div>
+                </div>
+                
+              </div>
+            </li>
+            
+            
+            <li class="testimonials-item">
+              <div class="tcontent-card" data-testimonials-item>
+                
+                <div class="service-icon-box">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/geobot-example.jpeg" alt="Geobot Example" data-testimonials-avatar>
+                </figure>
                 </div>
 
+                <div class="service-content-box">
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Geobot</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    University project: Creation of an ML model and training of a bot that is capable of playing the popular online game GeoGuessr. Geoguessr is a popular online game that challenges players to guess the location of a randomly selected place in the world based on a Google Street View image.
+                  </p>
+                  <ul>
+                      <li> Geoguessr's point system already provides a metric to optimize </li>
+                      <li> Dataset sourced from Googles Streetview API </li>
+                      <li> Design of Convolutional Neural Networks </li>
+                      <li> Using a cloud computing service to train, several hundred hours over multiple weeks were invested </li>
+                      <li> The country classification model did not yield satisfactory results</li>
+                      <li> An inception model trained on image tiles showed the most promising results</li>
+                  </ul>
+                </div>
+                </div>
+                
               </div>
             </li>
 
@@ -849,7 +900,26 @@
 
               </a>
             </li>
+            
+            
+            <li class="project-item  active" data-filter-item data-category="programming">
+              <a target="_blank" rel="noopener noreferrer" href="https://ajgl.blog/snowflakes.html">
 
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </div>
+
+                  <img src="./assets/images/ocr-demo.png" alt="snowflake" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PDF Optical Character Recognition</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+            
             <li class="project-item  active" data-filter-item data-category="programming">
               <a target="_blank" rel="noopener noreferrer" href="https://ajgl.blog/snowflakes.html">
 
@@ -934,8 +1004,9 @@
 
       <!--
         - #BLOG
-      -->
 
+        
+        
       <article class="blog" data-page="blog">
 
         <header>
@@ -1119,7 +1190,8 @@
         </section>
 
       </article>
-
+        
+        -->
 
 
 
