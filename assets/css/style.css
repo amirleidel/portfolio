@@ -719,10 +719,10 @@ main {
 
 .modal-close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
   background: var(--onyx);
-  border-radius: 8px;
+  border-radius: 12px;
   width: 32px;
   height: 32px;
   display: flex;
@@ -739,8 +739,7 @@ main {
 .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .modal-avatar-box {
-  background: var(--bg-gradient-onyx);
-  width: max-content;
+  width: 100%;
   border-radius: 14px;
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
@@ -769,10 +768,16 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  padding-left: 2em;
 }
 
 .modal-content ul li {
     list-style-type: disc;
+}
+
+.modal-avatar-box img {
+    width: 100%;
+    border-radius: 12px;
 }
 
 
@@ -1379,7 +1384,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 580px) {
     
-        .icon-box svg {
+    
+    .modal-close-btn {
+      top: 15px;
+      right: 15px;
+    }
+    .icon-box svg {
       width: 24px;
       height: 24px;
     }
@@ -1588,7 +1598,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
   }
 
-  .modal-avatar-box img { width: 65px; }
+  .modal-avatar-box img { width: 120px; }
 
   .modal-img-wrapper > img {
     display: block;
@@ -1716,7 +1726,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-width: 680px;
   }
 
-  .modal-avatar-box img { width: 80px; }
+  .modal-avatar-box img { width: 160px; }
 
 
 
