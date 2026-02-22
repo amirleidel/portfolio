@@ -637,7 +637,7 @@ main {
     }
 
 .testimonials-item-title { margin-bottom: 7px; }
-
+    
 .testimonials-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -756,16 +756,23 @@ main {
   margin-bottom: 10px;
 }
 
+.modal-content time img {
+    height: 1.2em;
+    display: inline;
+    position: relative;
+    vertical-align: bottom;
+}
+
 .modal-content p {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
 .modal-content ul {
   color: var(--light-gray);
-  font-size: var(--fs-6);
+  font-size: calc(0.95*var(--fs-6));
   font-weight: var(--fw-300);
   line-height: 1.6;
   padding-left: 2em;
@@ -773,6 +780,20 @@ main {
 
 .modal-content ul li {
     list-style-type: disc;
+}
+
+.modal-content button {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.modal-content .button-icon {
+    width: 1em;
+    display: inline;
+    position: relative;
+    vertical-align: bottom;
 }
 
 .modal-avatar-box img {
