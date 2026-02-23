@@ -637,7 +637,7 @@ main {
     }
 
 .testimonials-item-title { margin-bottom: 7px; }
-
+    
 .testimonials-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -719,10 +719,10 @@ main {
 
 .modal-close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
   background: var(--onyx);
-  border-radius: 8px;
+  border-radius: 12px;
   width: 32px;
   height: 32px;
   display: flex;
@@ -739,8 +739,7 @@ main {
 .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .modal-avatar-box {
-  background: var(--bg-gradient-onyx);
-  width: max-content;
+  width: 100%;
   border-radius: 14px;
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
@@ -757,22 +756,49 @@ main {
   margin-bottom: 10px;
 }
 
+.modal-content time img {
+    height: 1.2em;
+    display: inline;
+    position: relative;
+    vertical-align: bottom;
+}
+
 .modal-content p {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 
 .modal-content ul {
   color: var(--light-gray);
-  font-size: var(--fs-6);
+  font-size: calc(0.95*var(--fs-6));
   font-weight: var(--fw-300);
   line-height: 1.6;
+  padding-left: 2em;
 }
 
 .modal-content ul li {
     list-style-type: disc;
+}
+
+.modal-content button {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.modal-content .button-icon {
+    width: 1em;
+    display: inline;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.modal-avatar-box img {
+    width: 100%;
+    border-radius: 12px;
 }
 
 
@@ -1379,7 +1405,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 580px) {
     
-        .icon-box svg {
+    
+    .modal-close-btn {
+      top: 15px;
+      right: 15px;
+    }
+    .icon-box svg {
       width: 24px;
       height: 24px;
     }
@@ -1588,7 +1619,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
   }
 
-  .modal-avatar-box img { width: 65px; }
+  .modal-avatar-box img { width: 120px; }
 
   .modal-img-wrapper > img {
     display: block;
@@ -1716,7 +1747,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-width: 680px;
   }
 
-  .modal-avatar-box img { width: 80px; }
+  .modal-avatar-box img { width: 160px; }
 
 
 
