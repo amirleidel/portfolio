@@ -657,6 +657,9 @@ main {
    /* base arrow/icon color */
   color: rgba(255, 255, 255, 0.8);
   
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  
   position: absolute;
   top: 50%;
 
@@ -694,9 +697,19 @@ main {
   transform: translate3d(16px, -50%, 0);
 }
 
-.scroll-btn:hover {
-  color: var(--orange-yellow-crayola);
-  background: rgba(255, 255, 255, 0.10);
+/* change color on real hover with mouse */
+@media (hover: hover) and (pointer: fine) {
+  .scroll-btn:hover {
+    color: var(--orange-yellow-crayola);
+    background: rgba(255, 255, 255, 0.10);
+  }
+}
+/* change color only on touch with touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .scroll-btn:active {
+    color: var(--orange-yellow-crayola);
+    background: rgba(255, 255, 255, 0.15);
+  }
 }
 
 .scroll-btn.left { left: 8px; }
