@@ -55,6 +55,81 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
+// testimonials scroll buttons on desktop devices
+
+const list = document.querySelector('.testimonials-list');
+const items = document.querySelectorAll('.testimonials-item');
+const prev = document.querySelector('.scroll-btn.left');
+const next = document.querySelector('.scroll-btn.right');
+
+const wrapper = document.querySelector('.testimonials-wrapper');
+const firstItem = document.querySelector('.testimonials-item');
+
+function positionScrollButtons() {
+  if (!firstItem) return;
+
+  const listRect = list.getBoundingClientRect();
+  const itemRect = firstItem.getBoundingClientRect();
+  const wrapperRect = wrapper.getBoundingClientRect();
+
+  // distance from wrapper top → li center
+  const top =
+    (itemRect.top - wrapperRect.top) +
+    itemRect.height / 2;
+
+  prev.style.top = `${top}px`;
+  next.style.top = `${top}px`;
+}
+
+// run once and on resize
+positionScrollButtons();
+window.addEventListener('resize', positionScrollButtons);
+
+const GAP = 15; // must match CSS gap
+const BREAKPOINT = 1024;
+
+function itemsPerScroll() {
+  return window.innerWidth >= BREAKPOINT ? 2 : 1;
+}
+
+function scrollAmount() {
+  const count = itemsPerScroll();
+  const itemWidth = items[0].offsetWidth;
+
+  return count * itemWidth + (count * GAP);
+}
+
+function updateButtons() {
+const maxScrollLeft =
+  list.scrollWidth - list.clientWidth;
+
+// beginning
+prev.classList.toggle(
+  'is-hidden',
+  list.scrollLeft <= 1
+);
+
+// end
+next.classList.toggle(
+  'is-hidden',
+  list.scrollLeft >= maxScrollLeft - 1
+);
+}
+
+next.addEventListener('click', () => {
+  list.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+});
+
+prev.addEventListener('click', () => {
+  list.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+});
+
+// update on scroll + resize
+list.addEventListener('scroll', updateButtons);
+window.addEventListener('resize', updateButtons);
+
+// initial state
+updateButtons();
 
 
 // custom select variables
