@@ -731,12 +731,12 @@ main {
   transform: translate(-65%, -50%) rotate(-45deg);
 }
 
-/* hide on touch devices */
+/* hide on touch devices 
 @media (hover: none) {
   .scroll-btn {
     display: none;
   }
-}
+} */
 
 /**
  * #testimonials-modal
