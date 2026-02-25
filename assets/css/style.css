@@ -650,6 +650,10 @@ main {
   overflow: hidden;
 }
 
+p a {
+    display: inline;
+}
+
 .testimonials-wrapper {
   position: relative;
 }

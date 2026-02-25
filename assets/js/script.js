@@ -18,6 +18,8 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+const projectsItem = document.querySelectorAll("[data-filter-item]");
+
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
@@ -48,7 +50,25 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     testimonialsModalFunc();
 
   });
+}
 
+// add click event to all project items on project page as well
+// with same templating
+for (let i = 0; i < projectsItem.length; i++) {
+    
+    console.log(projectsItem[i]);
+  projectsItem[i].addEventListener("click", function () {
+    
+    console.log("click");
+    modalImg.src = this.querySelector("[data-projects-avatar]").src;
+    modalImg.alt = this.querySelector("[data-projects-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-projects-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-projects-text]").innerHTML;
+    modalTime.innerHTML = this.querySelector("[data-projects-time]").innerHTML;
+
+    testimonialsModalFunc();
+
+  });
 }
 
 // add click event to modal close button

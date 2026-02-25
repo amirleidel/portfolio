@@ -79,22 +79,22 @@
 
           </li>
             
-            <!--
+            
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             </div>
             
             
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <p class="contact-title">Languages</p>
+              <address>German, English, Tatar, Japanese</address>
+              
             </div>
             
           </li>
-          -->
+          
 
           <li class="contact-item">
 
@@ -156,7 +156,50 @@
 
 
 
+    <!--
+          - testimonials modal
+        -->
 
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time data-modal-time>14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+        
 
     <!--
       - #main-content
@@ -328,7 +371,7 @@
                 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Flashcard app that I build out of frustration with other apps. The two goals are ease of flashcard creation using a templating system and a flexible learning algorithm that does not limit the user.
+                    Flashcard app that I started building out of frustration with other apps. The two goals are ease of flashcard creation using a templating system and a flexible learning algorithm that does not limit the user.
                   </p>
                   <ul>
                       <li> Simple Python backend architecture </li>
@@ -336,7 +379,6 @@
                       <li> An open database format using sqlite3 </li>
                       <li> Compilation into a Windows and Android app </li>
                   </ul>
-                  <button onclick="location.href='http://www.example.com'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
                 </div>
                 </div>
                 
@@ -367,7 +409,6 @@
                       <li> Recognizes text blocks and paragraphs automatically</li>
                       <li> Automatic PDF &#x2192; Image file &#x2192; Text pipeline</li>
                   </ul>
-                  <button onclick="location.href='http://www.example.com'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
                 </div>
                 </div>
                 
@@ -447,49 +488,6 @@
         </section>
 
         
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time data-modal-time>14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
         
         <!--
@@ -838,169 +836,290 @@
 
           <ul class="project-list">
           
-          <li class="project-item  active" data-filter-item data-category="software development">
-              <a target="_blank" rel="noopener noreferrer" href="#">
-
+          <li class="project-item active" data-filter-item data-category="software development">
+              
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/micromemo-perspective.png" alt="micromemo" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/micromemo-perspective.png" alt="micromemo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MicroMemo Vocab Trainer</h3>
-
+                <h3 data-projects-title class="project-title">MicroMemo Vocab Trainer</h3>
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff"> <img alt="JS" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    Flashcard app that I started building out of frustration with other apps. The two goals are ease of flashcard creation using a templating system and a flexible learning algorithm that does not limit the user.
+                  </p>
+                  <ul>
+                      <li> Simple Python backend architecture </li>
+                      <li> GUI built using web technologies (HTML, CSS, JS) </li>
+                      <li> An open database format using sqlite3 </li>
+                      <li> Compilation into a Windows and Android app </li>
+                  </ul>
+                </div>
+                
                 <p class="project-category">Software Development</p>
-
-              </a>
             </li>
 
             
             
             <li class="project-item  active" data-filter-item data-category="software development">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/lumi-rpn">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/lumi-perspective.png" alt="lumi" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/lumi-perspective.png" alt="lumi" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Lumi RPN</h3>
+                <h3 data-projects-title class="project-title">Lumi RPN</h3>
 
                 <p class="project-category">Software Development</p>
-
-              </a>
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    Lumi RPN is a desktop Reverse Polish Notation (RPN) calculator for Windows, written in Python using a customtkinter GUI.
+                  </p>
+                  <ul>
+                      <li> Keyboard input </li>
+                      <li> Math functions as buttons </li>
+                      <li> Use of a stack-based (RPN) input method</li>
+                      <li> SI unit tracker </li>
+                      <li> Math and physical constants</li>
+                  </ul>
+                  <button onclick="location.href='https://github.com/amirleidel/lumi-rpn'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/lumi-rpn"></a>
             </li>
             
             <li class="project-item  active" data-filter-item data-category="computer graphics">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/ps1-project">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/opengl-screenshot.png" alt="opengl" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/opengl-screenshot.png" alt="opengl" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">C++ OpenGL Engine</h3>
+                <h3 data-projects-title class="project-title">C++ OpenGL Engine</h3>
 
                 <p class="project-category">Computer Graphics</p>
-
-              </a>
+                
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="OpenGL" src="https://img.shields.io/badge/OpenGl-5487A6?logo=OpenGl&logoColor=fff"> <img alt="C++" src="https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white"> <img alt="JSON" src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=fff"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    A graphics demo about rendering 3D objects and moving freely in real-time written using C++ and the OpenGL API.
+                  </p>
+                  <ul>
+                      <li> Extensible project structure using OOP</li>
+                      <li> OpenGL rendering pipeline</li>
+                      <li> 3D mesh loader for .obj files </li>
+                      <li> Level creation via .json files </li>
+                  </ul>
+                  <button onclick="location.href='https://github.com/amirleidel/ps1-project'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/ps1-project"></a>
             </li>
             
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/gedankenspiel">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/gedankenspiel.png" alt="lumi" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/gedankenspiel.png" alt="lumi" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">WebGL Engine</h3>
+                <h3 data-projects-title class="project-title">WebGL Engine</h3>
 
                 <p class="project-category">Web Development</p>
-
-              </a>
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="Three.js" src="https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff"> <img alt="JS" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000"> <img alt="JSON" src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=fff"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    A modular JavaScript/WebGL game engine built using Three.js, focused on isometric rendering and tile-based level creation using JSON files.
+                  </p>
+                  <ul>
+                      <li> Player movement implemented </li>
+                      <li> Tile-based levels using Texture atlases </li>
+                      <li> World & level loader from .json files  </li>
+                      <li> Entity & object model </li>
+                      <li> UI System (planned) </li>
+                  </ul>
+                  <button onclick="location.href='https://github.com/amirleidel/gedankenspiel'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/gedankenspiel"></a>
             </li>
             
             
             <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a target="_blank" rel="noopener noreferrer" href="https://ajgl.blog/snowflakes.html">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/ocr-demo.png" alt="snowflake" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/ocr-demo.png" alt="snowflake" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">PDF Optical Character Recognition</h3>
+                <h3 data-projects-title class="project-title">PDF Optical Character Recognition</h3>
 
                 <p class="project-category">Machine Learning</p>
-
-              </a>
+                
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-ffffff?logo=Jupyter"> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    Scripts to digitize large amounts of scans automatically using OCR. Using this, a whole book can be turned into structured text files to create a PDF file.
+                  </p>
+                  <ul>
+                      <li> Character recognition using Tesseract's pre-trained OCR models and easyocr</li>
+                      <li> Spell checking </li>
+                      <li> Recognizes text blocks and paragraphs automatically</li>
+                      <li> Automatic PDF &#x2192; Image file &#x2192; Text pipeline</li>
+                  </ul>
+                </div>
+                
+                <a target="_blank" rel="noopener noreferrer" href="https://ajgl.blog/snowflakes.html"></a>
             </li>
             
             <li class="project-item  active" data-filter-item data-category="programming">
-              <a target="_blank" rel="noopener noreferrer" href="https://ajgl.blog/snowflakes.html">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/snowflake0_4_4_4_2_1_0_1_0.jpg" alt="snowflake" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/snowflake0_4_4_4_2_1_0_1_0.jpg" alt="snowflake" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Procedural Generation</h3>
+                <h3 data-projects-title class="project-title">Procedural Generation</h3>
 
                 <p class="project-category">Programming</p>
-
-              </a>
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-ffffff?logo=Jupyter"> <img alt="Numpy" src="https://img.shields.io/badge/NumPy-4DABCF?logo=numpy&logoColor=fff">  <img alt="Matplotlib" src="https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    Procedurally generated snowflakes using convolution kernels. Using a random seed beautifully looking snowflake images are created. One possible adaptation of this concept could be to randomly generate intricate maps for video game levels from random seeds.
+                  </p>
+                  <ul>
+                      <li> Iteratively applied convolution is similar to cellular automata </li>
+                      <li> Hexagonal symmetry is achived later using a skew transform </li>
+                  </ul>
+                  <button onclick="location.href='https://ajgl.blog/snowflakes.html'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                <a target="_blank" rel="noopener noreferrer" href="https://ajgl.blog/snowflakes.html"></a>
             </li>
             
             <li class="project-item  active" data-filter-item data-category="computer graphics">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/cga_raytrace_demo">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/cga-render-refl-img.png" alt="cga" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/cga-render-refl-img.png" alt="cga" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">CGA Raytracing</h3>
+                <h3 data-projects-title class="project-title">CGA Raytracing</h3>
 
                 <p class="project-category">Computer Graphics</p>
-
-              </a>
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-ffffff?logo=Jupyter"> <img alt="Numpy" src="https://img.shields.io/badge/NumPy-4DABCF?logo=numpy&logoColor=fff">  <img alt="Matplotlib" src="https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    By applying the concept of a five dimensional framework of Conformal Geometric Algebra (CGA) from physics, I tried to generate some scene renders using raytracing methods. Methods for this are described in <a target="_blank" rel="noopener noreferrer" href="https://link.springer.com/article/10.1007/s00006-019-1003-y"> Hadfield et al </a>, where they also introduce parametric volumes that could be used in graphic design and geometry-heavy applications.
+                  </p>
+                  <ul>
+                      <li> Raytracing and lighting using Blinn-Phong shading </li>
+                      <li> Implementation of parameterized surfaces </li>
+                      <li> Not a single linear system of equations used, but Clifford algebras to solve for ray paths </li>
+                      <li> Reflective surfaces </li>
+                  </ul>
+                  <button onclick="location.href='https://github.com/amirleidel/cga_raytrace_demo'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/cga_raytrace_demo"></a>
             </li>
             
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/qixel">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/qixel.png" alt="orizon" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/qixel.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Halftone QR-Codes</h3>
+                <h3 data-projects-title class="project-title">Halftone QR-Codes</h3>
 
                 <p class="project-category">Web development</p>
-
-              </a>
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="JS" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    Tool for inserting logos/branding and simple images into a QR code, making it become visible especially from for away. The QR-Code generator uses Error Diffusion Dithering to insert an image directly into the scannable module matrix. Available at <a target="_blank" rel="noopener noreferrer" href="https:qixel.eu">qixel.eu</a>.
+                  </p>
+                  <ul>
+                      <li> Manually mark the image foreground object </li>
+                      <li> Automatic foreground detection using GrabCut </li>
+                      <li> Image dithering and insertion into a QR code </li>
+                      <li> QR code is embedded into the dithered image, so the readablity is less impacted </li>
+                  </ul>
+                  <button onclick="location.href='https://github.com/amirleidel/qixel'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/qixel"></a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/geobot">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                   </div>
 
-                  <img src="./assets/images/geobot-example.jpeg" alt="geobot" loading="lazy">
+                  <img data-projects-avatar src="./assets/images/geobot-example.jpeg" alt="geobot" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Geobot</h3>
+                <h3 data-projects-title class="project-title">Geobot</h3>
 
                 <p class="project-category">Machine Learning</p>
-
-              </a>
+                <div class="testimonials-time" style="display: none;" data-projects-time> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff"> <img alt="TF" src="https://img.shields.io/badge/TensorFlow-ff8f00?logo=tensorflow&logoColor=white"> </div>
+                
+                <div class="testimonials-text" style="display: none;" data-projects-text>
+                  <p>
+                    University project: Creation of an ML model and training of a bot that is capable of playing the popular online game GeoGuessr. Geoguessr is an online game that challenges players to guess the location of a randomly selected place in the world based on a Google Street View image.
+                  </p>
+                  <ul>
+                      <li> Geoguessr's point system already provides a metric to optimize </li>
+                      <li> Dataset sourced from Googles Streetview API </li>
+                      <li> Design of Convolutional Neural Networks </li>
+                      <li> Using a cloud computing service to train </li>
+                      <li> The country classification model did not yield satisfactory results</li>
+                      <li> An inception model trained on image tiles showed the most promising results</li>
+                  </ul>
+                  <button onclick="location.href='https://github.com/amirleidel/geobot'" type="button">More <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/amirleidel/geobot"></a>
             </li>
             
           </ul>
