@@ -806,7 +806,7 @@ p a {
   background: var(--eerie-black-2);
   position: relative;
   padding: 15px;
-  margin: 15px 12px;
+  margin: 50px 12px;
   border: 1px solid var(--jet);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
